@@ -2,16 +2,25 @@ require_relative '../../../lib/look_of_performance/configuration'
 
 module LookOfPerformance
   describe Configuration do
-    it 'responds to output' do
-      expect(subject).to respond_to :output
+    describe 'output' do
+      it 'can be set and retrieved' do
+        subject.output = 'bananas'
+        expect(subject.output).to eq 'bananas'
+      end
     end
 
-    it 'responds to delimiter' do
-      expect(subject).to respond_to :delimiter
+    describe 'delimiter' do
+      it 'can be set and retrieved' do
+        subject.delimiter = '|'
+        expect(subject.delimiter).to eq '|'
+      end
     end
 
-    it 'responds to limit' do
-      expect(subject).to respond_to :limit
+    describe 'limit' do
+      it 'can be set and retrieved' do
+        subject.limit = 1000
+        expect(subject.limit).to eq 1000
+      end
     end
   end
 end

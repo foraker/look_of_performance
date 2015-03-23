@@ -8,6 +8,8 @@ It's Rails-specific as it hooks into `ActionController`.
 
 If you would find having `ಠ_ಠ`s thrown at you motivating, then this gem's for you.
 
+You'll get one `ಠ_ಠ` per 100 ms that your action takes to process by default.
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -27,6 +29,36 @@ Or install it yourself as:
 ## Usage
 
 Add `require 'look_of_performance'` to your `ApplicationController` to get logging added to every action. Alternatively, you can just require it in specific controllers where you need motivation to improve the performance.
+
+## Configuration
+
+### Options
+
+    output
+
+The string that you get once per every `limit` milliseconds.
+
+Defaults to ಠ_ಠ
+
+    delimiter
+
+The string that is included between each `output` that your slowness has earned you.
+
+Defaults to " "
+
+    limit
+
+The number of milliseconds you're trying to beat. If your action takes more than the `limit` to load, you'll get at least one `output` thrown at you. Every additional `limit` ms the response takes, you'll get an additional `output`.
+
+Defaults to 100. Is that optimistic? Yeah, probably.
+
+### Overriding
+
+You can override the default configuration by creating an initializer (e.g. `config/intitializers/look_of_performance.rb`) and setting the values yourself, like so:
+
+```ruby
+LookOfPerformance::Configuration.output = "bananas"
+```
 
 ## Contributing
 

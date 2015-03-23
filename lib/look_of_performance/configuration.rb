@@ -3,15 +3,27 @@
 module LookOfPerformance
   module Configuration
     def self.output
-      "ಠ_ಠ"
+      @output || "ಠ_ಠ"
+    end
+
+    def self.output=(output)
+      @output = output
     end
 
     def self.delimiter
-      " "
+      @delimiter || " "
+    end
+
+    def self.delimiter=(delimiter)
+      @delimiter = delimiter
     end
 
     def self.limit
-      100
+      @limit || 100
+    end
+
+    def self.limit=(limit)
+      @limit = limit
     end
   end
 end
