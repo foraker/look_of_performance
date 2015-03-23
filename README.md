@@ -1,6 +1,6 @@
 # LookOfPerformance
 
-This gem will print out a look of disapproval when your action takes too long to process.
+This gem will print out a look of disapproval in your development log when your action takes too long to process.
 
 It's primarily an experiment into using `ActiveSupport::LogSubscriber`.
 
