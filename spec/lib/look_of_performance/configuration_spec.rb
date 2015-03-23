@@ -2,10 +2,10 @@ require_relative '../../../lib/look_of_performance/configuration'
 
 module LookOfPerformance
   describe Configuration do
-    describe 'output' do
+    describe 'scolding' do
       it 'can be set and retrieved' do
-        subject.output = 'bananas'
-        expect(subject.output).to eq 'bananas'
+        subject.scolding = 'bananas'
+        expect(subject.scolding).to eq 'bananas'
       end
     end
 

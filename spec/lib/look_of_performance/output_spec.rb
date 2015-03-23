@@ -4,7 +4,7 @@ require 'ostruct'
 module LookOfPerformance
 
   TestConfig = OpenStruct.new(
-    output:    'slow',
+    scolding:  'slow',
     delimiter: ' ',
     limit:     100
   )

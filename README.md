@@ -34,7 +34,7 @@ Add `require 'look_of_performance'` to your `ApplicationController` to get loggi
 
 ### Options
 
-    output
+    scolding
 
 The string that you get once per every `limit` milliseconds.
 
@@ -42,13 +42,13 @@ Defaults to ಠ_ಠ
 
     delimiter
 
-The string that is included between each `output` that your slowness has earned you.
+The string that is included between each `scolding` that your slowness has earned you.
 
 Defaults to " "
 
     limit
 
-The number of milliseconds you're trying to beat. If your action takes more than the `limit` to load, you'll get at least one `output` thrown at you. Every additional `limit` ms the response takes, you'll get an additional `output`.
+The number of milliseconds you're trying to beat. If your action takes more than the `limit` to load, you'll get at least one `scolding` thrown at you. Every additional `limit` ms the response takes, you'll get an additional `scolding`.
 
 Defaults to 100. Is that optimistic? Yeah, probably.
 
@@ -57,7 +57,7 @@ Defaults to 100. Is that optimistic? Yeah, probably.
 You can override the default configuration by creating an initializer (e.g. `config/intitializers/look_of_performance.rb`) and setting the values yourself, like so:
 
 ```ruby
-LookOfPerformance::Configuration.output = "bananas"
+LookOfPerformance::Configuration.scolding = "bananas"
 ```
 
 ## Contributing

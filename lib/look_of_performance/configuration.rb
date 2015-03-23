@@ -2,12 +2,12 @@
 
 module LookOfPerformance
   module Configuration
-    def self.output
-      @output || "ಠ_ಠ"
+    def self.scolding
+      @scolding || "ಠ_ಠ"
     end
 
-    def self.output=(output)
-      @output = output
+    def self.scolding=(scolding)
+      @scolding = scolding
     end
 
     def self.delimiter

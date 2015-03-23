@@ -6,7 +6,7 @@ module LookOfPerformance
     end
 
     def to_s
-      (1..times).map { |_| output }.join(delimiter)
+      (1..times).map { |_| scolding }.join(delimiter)
     end
 
     def sendable?
@@ -25,8 +25,8 @@ module LookOfPerformance
       config.limit
     end
 
-    def output
-      config.output
+    def scolding
+      config.scolding
     end
 
     def delimiter
