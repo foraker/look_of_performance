@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = LookOfPerformance::VERSION
   spec.authors       = ["Jon Evans"]
   spec.email         = ["jle@foraker.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Shame yourself into better performance.}
+  spec.description   = %q{Be scolded with looks of disapproval when your app is slow.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
