@@ -6,7 +6,16 @@ module LookOfPerformance
     end
 
     def to_s
-      (1..times).map { |_| scolding }.join(delimiter)
+      
+      
+      str = (1..times).map { |_| scolding }.join(delimiter)
+      
+      if !str.empty?
+        return "( ͡° ͜ʖ ͡°)╯╲___#{str} Don't mind me just taking my developers for a walk"
+      else
+        return ""
+      end
+      
     end
 
     def sendable?
