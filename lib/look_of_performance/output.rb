@@ -10,11 +10,11 @@ module LookOfPerformance
       
       str = (1..times).map { |_| scolding }.join(delimiter)
       
-      if !str.empty?
-        return "( ͡° ͜ʖ ͡°)╯╲___#{str} Don't mind me just taking my developers for a walk"
-      else
-        return ""
-      end
+      return "" if str.empty?
+      
+      [prefix, str, suffix].join(delimiter)
+      
+      
       
     end
 
@@ -41,5 +41,15 @@ module LookOfPerformance
     def delimiter
       config.delimiter
     end
+    
+    def prefix
+      config.prefix
+    end
+    
+    def suffix
+      config.suffix
+    end
+    
+    
   end
 end

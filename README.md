@@ -52,6 +52,14 @@ The number of milliseconds you're trying to beat. If your action takes more than
 
 Defaults to 100. Is that optimistic? Yeah, probably.
 
+    prefix
+    
+A string to be prepended to the output before the scolding
+
+    suffix
+    
+A string to be appended to the output after the scolding
+
 ### Overriding
 
 You can override the default configuration by creating an initializer (e.g. `config/intitializers/look_of_performance.rb`) and setting the values yourself, like so:

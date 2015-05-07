@@ -25,5 +25,22 @@ module LookOfPerformance
     def self.limit=(limit)
       @limit = limit
     end
+    
+    def self.prefix
+      @prefix || ""
+    end
+
+    def self.prefix=(prefix)
+      @prefix = prefix
+    end
+    
+    def self.suffix
+      @suffix || ""
+    end
+    
+    def self.suffix=(suffix)
+      @suffix = suffix
+    end
+    
   end
 end
