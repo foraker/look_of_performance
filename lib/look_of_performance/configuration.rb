@@ -41,6 +41,5 @@ module LookOfPerformance
     def self.suffix=(suffix)
       @suffix = suffix
     end
-    
   end
 end
