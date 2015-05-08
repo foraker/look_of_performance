@@ -6,6 +6,8 @@ module LookOfPerformance
   TestConfig = OpenStruct.new(
     scolding:  'slow',
     delimiter: ' ',
+    prefix: "(o_o)",
+    suffix: "don't mind me just taking my developers for a walk",
     limit:     100
   )
 
@@ -17,7 +19,7 @@ module LookOfPerformance
       let(:duration) { 200 }
 
       it 'is the output string joined by delimiter the right number of times' do
-        expect(output.to_s).to eq 'slow slow'
+        expect(output.to_s).to eq "(o_o) slow slow don't mind me just taking my developers for a walk"
       end
     end
 

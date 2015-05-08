@@ -6,7 +6,11 @@ module LookOfPerformance
     end
 
     def to_s
-      (1..times).map { |_| scolding }.join(delimiter)
+      str = (1..times).map { |_| scolding }.join(delimiter)
+      
+      return "" if str.empty?
+      
+      [prefix, str, suffix].join(delimiter)
     end
 
     def sendable?
@@ -31,6 +35,14 @@ module LookOfPerformance
 
     def delimiter
       config.delimiter
+    end
+    
+    def prefix
+      config.prefix
+    end
+    
+    def suffix
+      config.suffix
     end
   end
 end
